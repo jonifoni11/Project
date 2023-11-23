@@ -62,3 +62,35 @@ void main()
         cout << "Функция не найдена";
     }
 }
+
+
+
+
+
+
+\\for unit test
+
+
+#include "pch.h"
+#include "CppUnitTest.h"
+#include "C:\Users\1235\source\repos\2\ps2\пз2.cpp"
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+
+namespace UnitTest1
+{
+	TEST_CLASS(UnitTest1)
+	{
+	public:
+
+		TEST_METHOD(TestMethod1)
+		{
+            try {
+				int n = 5;
+				checkValidInput(n);
+            }
+            catch (bool boo) {
+                Assert::IsFalse(boo);
+            }
+		}
+	};
+}
